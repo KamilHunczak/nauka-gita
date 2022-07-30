@@ -1,0 +1,61 @@
+/*variables*/
+$font-handwriting:'Dancing Script', cursive;
+$font-main: 'Roboto Condensed', sans-serif;
+$color-background-light: #e5eded;
+$color-background-dark: #27282D;
+$color-font-dark: #000;
+$color-font-light:#e5eded;
+$color-background-middle: #828790;
+
+/*Global*/
+*::after,
+*::before, 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $font-main;
+}
+
+/*Navigation*/
+nav{
+    background-color: $color-background-dark;
+    color: $color-font-light;
+    width: 100%;
+    position: fixed;
+    .container{
+        max-width: 968px;
+        margin: 0 auto;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                list-style: none;
+                width: 100%;
+                a{
+                    width: 100%;
+                    color: $color-font-light;
+                    display: block;
+                    text-decoration: none;
+                    padding: 15px 0;  
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: 0.5s;
+                    background-image: linear-gradient(90deg, $color-background-light 50%, transparent 50% );
+                    background-size: 300%;
+                    background-position: 100% 0;
+                    &:hover{
+                    background-position: 0 100%;
+                    color: $color-font-dark;
+                    }
+                }
+                
+            }
+        }
+    }
+}
