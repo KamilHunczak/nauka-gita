@@ -12,16 +12,18 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
 /*Navigation*/
 nav {
   background-color: #27282D;
   color: #e5eded;
   width: 100%;
   position: fixed;
-}
-nav .container {
-  max-width: 968px;
-  margin: 0 auto;
+  top: 0;
 }
 nav .container ul {
   list-style: none;
@@ -49,4 +51,20 @@ nav .container ul li a {
 nav .container ul li a:hover {
   background-position: 0 100%;
   color: #000;
+}
+
+/*Main*/
+.main {
+  margin-top: 60px;
+}
+.main .container .song-title {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin: 15px 0;
+}
+.main .container .song-lyrics {
+  text-align: justify;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 200%;
 }/*# sourceMappingURL=style.css.map */

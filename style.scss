@@ -18,6 +18,10 @@ $color-background-middle: #828790;
 body{
     font-family: $font-main;
 }
+.container{
+    max-width: 968px;
+    margin: 0 auto;
+}
 
 /*Navigation*/
 nav{
@@ -25,9 +29,8 @@ nav{
     color: $color-font-light;
     width: 100%;
     position: fixed;
+    top: 0;
     .container{
-        max-width: 968px;
-        margin: 0 auto;
         ul{
             list-style: none;
             display: flex;
@@ -56,6 +59,24 @@ nav{
                 }
                 
             }
+        }
+    }
+}
+
+/*Main*/
+.main{
+    margin-top: 60px;
+    .container{
+        .song-title{
+            font-family: $font-handwriting;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .song-lyrics{
+            text-align: justify;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 200%;
         }
     }
 }
